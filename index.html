@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom &amp; Balance — Salon &amp; Spa</title>
+<style>
+:root{--brand:#c05a82;--brand-dark:#71334f;--ink:#292127;--paper:#fff8fb;--muted:#786b73;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #e7e5e4;display:flex;justify-content:space-between;align-items:center;padding:14px 6%;z-index:10;flex-wrap:wrap;gap:8px;}
+.logo{font-weight:800;font-size:20px;color:var(--brand-dark);}
+nav ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap;}
+nav a{text-decoration:none;color:var(--ink);font-size:14px;font-weight:600;}
+nav a:hover{color:var(--brand);}
+@keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+.hero{padding:70px 6%;background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;text-align:center;}
+.hero h1{font-size:40px;margin-bottom:12px;animation:rise .7s ease both;}
+.hero p{max-width:560px;margin:0 auto 26px;font-size:17px;opacity:.95;animation:rise .7s ease .15s both;}
+.btn{display:inline-block;background:#fff;color:var(--brand-dark);padding:12px 28px;border-radius:999px;font-weight:700;text-decoration:none;animation:rise .7s ease .3s both;}
+section{padding:60px 6%;}
+h2{font-size:28px;margin-bottom:8px;color:var(--brand-dark);}
+.sub{color:var(--muted);margin-bottom:28px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+.card{background:#fff;border:1px solid #e7e5e4;border-radius:14px;padding:22px;transition:transform .2s,box-shadow .2s;}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.08);}
+.card h3{margin-bottom:8px;font-size:18px;}
+.card p{font-size:14px;color:var(--muted);}
+.btn-small{display:inline-block;margin-top:12px;padding:8px 18px;background:var(--brand);color:#fff;border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;}
+.quote{background:#fff;border-left:4px solid var(--brand);padding:18px 22px;border-radius:8px;margin-bottom:14px;font-style:italic;}
+.quote b{display:block;margin-top:8px;font-style:normal;font-size:13px;color:var(--muted);}
+.contact-box{background:#fff;border:1px solid #e7e5e4;border-radius:14px;padding:26px;}
+.whats-float{position:fixed;bottom:22px;right:22px;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:20;transition:transform .2s;}
+.whats-float:hover{transform:scale(1.1);}
+footer{background:var(--ink);color:#d6d3d1;padding:34px 6%;text-align:center;font-size:13px;}
+footer a{color:#fdba74;}
+@media(max-width:640px){nav ul{gap:12px;}.hero h1{font-size:30px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Bloom &amp; Balance</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <h1>Feel Beautiful. Find Your Balance.</h1>
+  <p>Your neighbourhood salon and spa for thoughtful hair care, skin rituals and restorative treatments.</p>
+  <a class="btn" href="#menu">Explore Our Services</a>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p class="sub">A little time for yourself goes a long way.</p>
+  <p>Bloom &amp; Balance is a welcoming salon and spa in Pune, created to make self-care feel personal, calming and easy to fit into your day. Our experienced team pairs thoughtful consultations with quality products and unhurried care. Come as you are and leave feeling refreshed.</p>
+</section>
+
+<section id="menu">
+  <h2>Our Services</h2>
+  <p class="sub">Thoughtful care, tailored to you.</p>
+  <div class="cards">
+    <div class="card"><h3>Cut, Colour &amp; Styling</h3><p>Personalised cuts, nourishing colour and effortless styling designed around your hair.</p></div>
+    <div class="card"><h3>Glow Facial Rituals</h3><p>Relaxing, skin-conscious facials with a gentle cleanse, soothing massage and hydration.</p></div>
+    <div class="card"><h3>Restorative Spa Massage</h3><p>Slow down with a calming full-body massage tailored to your comfort and preference.</p></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>What Customers Say</h2>
+  <p class="sub">A few kind words from our guests.</p>
+  <div class="quote">"I felt listened to from the consultation onward. My haircut is exactly what I wanted."<b>— Ananya, salon guest</b></div>
+  <div class="quote">"The facial was so calming, and my skin felt soft and refreshed afterwards."<b>— Meera, spa guest</b></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p class="sub">We'd love to help you plan a little time for yourself.</p>
+  <div class="cards">
+    <div class="card"><h3>Call or WhatsApp</h3><p>Appointments and enquiries: +91 8092702246</p><a class="btn-small" href="https://wa.me/918092702246">Message Us</a></div>
+    <div class="card"><h3>Opening Hours</h3><p>Tuesday–Sunday, 10:00 AM–8:00 PM<br>Monday: Closed</p><a class="btn-small" href="tel:+918092702246">Call Now</a></div>
+    <div class="card"><h3>Visit Us</h3><p>Kurji more, Patna, Bihar,  411001.</p></div>
+  </div>
+</section>
+
+<a class="whats-float" href="https://wa.me/918092702246" target="_blank" rel="noopener" title="Chat with Bloom &amp; Balance on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669 -.51 -.173 -.008 -.371 -.01 -.57 -.01 -.198 0 -.52 .074 -.792 .372 -.272 .297 -1.04 1.016 -1.04 2.479 0 1.462 . 119 2.875 .272 3.286 .149 .412 1.055 2.006 2.548 2.994 1.493 .987 2.651 1.11 3.18 1.163 .528 .052 1.67 -.197 2.02 -1.544 .348 -1.347 .348 -2.496 .243 -2.744 -.105 -.248 -.272 -.397 -.57 -.546zM12 .5C5.648 .5 .5 5.648 .5 12c0 2.115 .552 4.082 1.512 5.797L0 24l6.338 -1.512C8.018 23.448 9.985 24 12 24c6.352 0 11.5 -5.148 11.5 -11.5S18.352 .5 12 .5z"/></svg>
+  <!-- STUDENT BRANDING LINE — uncomment karo aur apna naam + access key daalo (Showcase priority + 5 XP):
+  <p style="margin-top:8px;font-size:12px">Crafted by <b>[Your Name]</b> · ApnoAI Web Development Intern, October 2026 · <a href="https://apnoai.com">apnoai.com</a> · Verify: apnoai.com/verify?id=[YOUR-ACCESS-KEY]</p>
+  -->
+</footer>
+
+</body>
+</html>
